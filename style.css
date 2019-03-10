@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #464646;
+    margin: 5vh 10%;
+    color: #fff;
+}
+
+h1.title {
+    text-align: center;
+    color: coral;
+}
+
+.display {
+    background: #242424;
+    margin: 1rem;
+    padding: 2rem 3rem;
+}
+
+.frame {
+    padding: 1rem 2rem;
+    border: solid 3px coral;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-weather {
+    font-size: 2rem;
+}
+
+span#current-city {
+    color: coral;
+}
+
+#icon {
+    width: 12rem;
+}
+
+#weather {
+    color: #ccc;
+    font-size: 1.5rem;
+}
+
+#temp {
+    font-size: 2.5rem;
+    color: coral;
+    margin-bottom: 1rem;
+}
+
+.cities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+    .cities span {
+        width: 17%;
+        margin: .5rem 1rem;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        background: #242424;
+        border: solid 2px coral;
+        cursor: pointer;
+    }
+    .cities span:hover {
+        opacity: .85;
+    }
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+    body {
+        margin: 5vh 2%;
+    }
+    .display {
+        padding: 1rem 1.5rem;
+    }
+    .frame {
+        padding: 1rem 2rem;
+        border: solid 3px coral;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .current-weather {
+        font-size: 1.2rem;
+    }
+    #icon {
+        width: 10rem;
+    }
+    #weather {
+        font-size: 1.2rem;
+    }
+    #temp {
+        font-size: 2rem;
+    }
+    .cities {
+        justify-content: space-evenly;
+    }
+    .cities span {
+        width: 26%;
+        font-size: .8rem;
+    }
+}
